@@ -28,8 +28,8 @@ class String
 
   def count_sentences
     binding.pry 
-    if self.split('.') > 0 
-      return self.split('.').count
+    if self.split(/\. |\? |\! /).count > 0 
+      return self.split(/\. |\? |\! /).count
     else 
       return 0 
     end
